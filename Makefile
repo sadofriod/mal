@@ -89,7 +89,7 @@ DOCKERIZE =
 # Implementation specific settings
 #
 
-IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cpp crystal cs d dart \
+IMPLS = ada ada.2 awk bash javascript basic bbc-basic c chuck clojure coffee common-lisp cpp crystal cs d dart \
 	elisp elixir elm erlang es6 factor fantom forth fsharp go groovy gnu-smalltalk \
 	guile haskell haxe hy io java js jq julia kotlin livescript logo lua make mal \
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
@@ -267,7 +267,7 @@ wasm_STEP_TO_PROG =          impls/wasm/$($(1)).$(if $(filter lucet,$(wasm_MODE)
 wren_STEP_TO_PROG =          impls/wren/$($(1)).wren
 yorick_STEP_TO_PROG =        impls/yorick/$($(1)).i
 zig_STEP_TO_PROG =           impls/zig/$($(1))
-
+javascript_STEP_TO_PROG =   impls/javascript/$($(1)).js
 #
 # General settings and utility functions
 #
